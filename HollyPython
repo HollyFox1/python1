@@ -1,2 +1,16 @@
 print("Programming","Essentials","in")
 print("Python")
+"My", "name", "is", sep="_", end="*")
+
+
+2.1.1.18
+print("Programming","Essentials","in", sep="***",end="...")
+print("Python")
+
+2.1.1.19
+dont understand what im meant to do 
+
+2.2.1.11
+print ('"im"')
+print ('""learning""')
+print ('""python"""')
