@@ -29,7 +29,7 @@ print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
 
 #2.4.1.10
 
-x = -1 # hardcode your test data here
+x = -1 
 x = float(x)
 y = (3*x**3-2*x**2+3*x-1)
 print("y =", y)
@@ -46,7 +46,8 @@ print("Hours: ", a) #printing the number of hours
 print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a given number of hours
 
 #here we should also print "Goodbye", but a programmer didn't have time to write any code
-#this is the end of the program that computes the number of seconds in 3 hour
 
+#3.1.1.4
 
-
+n = int(input("what is the value n:"))
+print (n>=100)
