@@ -8,6 +8,11 @@
 
 #Your task is very simple here: write a program that uses a for loop to "count mississippily" to five. Having counted #to five, the program should print to the screen the final message "Ready or not, here I come!"
 
-Note that the code in the editor contains two elements which may not be fully clear to you at this moment: the import time statement, and the sleep() method. We're going to talk about them soon.
+#Note that the code in the editor contains two elements which may not be fully clear to you at this moment: the import time statement, and the sleep() method. We're going to talk about them soon.
 
-For the time being, we'd just like you to know that we've imported the time module and used the sleep() method to suspend the execution of each subsequent print() function inside the for loop for one second, so that the message outputted to the console resembles an actual counting. Don't worry - you'll soon learn more about modules and methods.
+import time #This will import the built in time module, this is required to use time.sleep() below.
+#For loop to count in mississippi's from 1 to 5, with a 1 second pause.
+for i in range(0,5):
+    i += 1 #Increment i by 1
+    print(i,"Mississippi") #Print the value in i followed by Mississippi
+    time.sleep(1) #Make the loop sleep for 1 second this will slow the count down to one Mississippi per second.
