@@ -4,3 +4,13 @@
 
 #Don't print any of the words entered by the user. Use the concept of conditional execution and the break statement.
 
+#Receive a guess from the user and set variable.
+guess = str(input("I have a secret word, what do you think it is:"))
+#Set the secret word variable
+secret_word = str("chupacabra")
+#While loop to check if guess is correct
+while guess != secret_word:
+    guess = input("That's not the secret word, guess again!:")#If guess is not correct do this, it will change the guess variable to the new input and check again.
+    if guess == secret_word:#If guess is correct, break out of the loop
+        break
+print("You have guessed correctly", secret_word,"is the secret word!")#and print this message
