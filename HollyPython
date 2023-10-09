@@ -51,3 +51,7 @@ print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a g
 
 n = int(input("what is the value n:"))
 print (n>=100)
+
+## 3.2.4##
+
+
