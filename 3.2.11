@@ -1,0 +1,17 @@
+#Set user entry and variables
+user_word = str(input("Enter a word:"))
+word_wihout_vowels = ""
+vowels = "A","E","I","O","U"
+
+#Loop to check if each letter in user_word matches vowles
+#If it matches continue and do nothing with it
+#If it does not match then add the letter to word_without_vowels
+
+for letter in user_word:
+    if letter in vowels:
+        continue
+    else:
+        letter += word_without_vowels
+
+#This prints the variable word_without_vowels
+print(word_without_vowels)
