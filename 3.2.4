@@ -13,9 +13,10 @@ x = int(input("enter your guess"))
 #secret number, the user should see the message "Ha ha!#You're stuck
 # in my loop!"and be prompted to enter a number again.
 
-while x != secret_number
+while x != secret_number:
     print("haha You're stuck in my loop!")
-
+    x = int(input("enter your guess...?"))
+ 
 
 #If the number entered by the user matches the number picked by 
 #the magician, the number should be printed to the screen,
