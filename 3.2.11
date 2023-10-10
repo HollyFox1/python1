@@ -1,6 +1,6 @@
 #Set user entry and variables
 user_word = str(input("Enter a word:"))
-word_wihout_vowels = ""
+word_without_vowels = ""
 vowels = "A","E","I","O","U"
 
 #Loop to check if each letter in user_word matches vowles
