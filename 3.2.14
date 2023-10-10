@@ -1,0 +1,23 @@
+#Ask for input
+blocks = int(input("Enter the number of blocks:"))
+
+#Set used blocks variable to 1, this is to account for row 1.
+used_blocks = 1
+
+#Set the height variable to 0
+height = 0
+
+#While loop to run as long as used_blocks <= blocks, height is increased by 1. 
+#Used_blocks is removed from blocks to account for completing a row of the pyramid.
+#Used blocks is incremented by 1 as each row is one block larger than the last.
+#If used blocks is larger than blocks this means there are not enough blocks to 
+#complete a row and the loop exits.
+
+while used_blocks <= blocks:
+
+    height += 1
+    blocks -= used_blocks
+    used_blocks += 1
+
+#Display the results.
+print("The height of the pyramid is:",height)
