@@ -1,0 +1,43 @@
+#Step 1 create an empty beatles list
+beatles = []
+
+# Step 2 add three beatles with append and print results
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print(beatles)
+
+# Step 3
+#This does not answer the question as i do not use a for loop, this just works better in my opinion.
+#It will ask the user if they want to add a band member to the list, entering a 'y' will add the band member any other input will cancel the entry.
+
+step3_SS = input("Press y if you want to add Stu Sutcliffe to the band. ")
+if step3_SS == "y":
+    beatles.append("Stu Sutcliffe")
+else:
+    print("You did not add Stu Sutcliffe to the band")
+
+step3_PB = input("Press y if you want to add Pete Best to the band. ")
+if step3_PB == "y":
+    beatles.append("Pete Best")
+else:
+    print("You did not add Pete Best to the band")
+
+print(beatles)
+
+# Step 4
+#Delete the last two entered band members.
+#del beatles[3] is used twice because when position 3 is deleted then position 4 becomes position 3.
+#Another way of doing it would be to:
+#del beatles[4]
+#del beatles[3]
+
+del beatles[3]
+del beatles[3]
+
+print(beatles)
+
+#Step 5
+#This inserts Ringo Starr onto the start of the list.
+beatles.insert(0, "Ringo Starr")
+print(beatles)
