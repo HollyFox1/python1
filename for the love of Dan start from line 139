@@ -1,0 +1,279 @@
+#fltOne= float(10)
+#fltTwo= float(20)
+#fltThree= fltOne * fltTwo
+#print (fltThree)
+
+#stringOne = "The product of fltOne and fltTwo = "
+
+#print (stringOne, fltThree)
+
+#fltOne = fltOne + 1
+
+#fltTwo = float(input("please provide another number for fltTwo"))
+
+#print ("the new value is", fltOne * fltTwo)
+
+
+#if fltTwo < 100:
+    #print("below 100")
+
+###------------------###
+
+#if fltOne - fltTwo < 0:
+    #print ("below zero")
+
+
+#elif fltOne - fltTwo == 0:
+    #print ("value is zero")
+
+#else:
+    #print ("above zero")
+
+###------------------###
+#Question 10
+
+#listOfInts = []
+
+#dic ={4,6,8,10,12,14,16,18,20,22}
+
+#for i in dic:
+    #if i not in listOfInts:
+        #listOfInts.append(i)
+
+#print (listOfInts)
+
+#counter =0
+#for i in  listOfInts:
+    #listOfInts [counter] = i*3
+    #counter +=1
+
+#print (listOfInts)
+
+
+###------------------###
+#Question 14
+
+#def CalcPerc (cost,percentage = 10):
+    #reduce = percentage/100 * cost
+    #new_cost = cost - reduce
+
+    #return new_cost
+
+#print (CalcPerc(50,10))
+
+
+###------------------###
+#Question 15
+
+#create a function called caseChanger which takes a string argument written all in lower case
+#It will output all letters in lowercase except e which it will conver to capital E (10 marks)
+#For example, caseChanger("hello") prints hEllo to the console
+
+#def caseChanger (word):
+    #mod_word =""
+    #for letter in word:
+        #if letter == "e":
+            #mod_word += "E"
+
+        #else:
+            #mod_word += letter
+    
+    #eturn mod_word
+
+    
+
+#print (caseChanger("Steeper"))
+
+###------------------###
+
+#16)a) Create a list that represents a set of students. The list should contain the following
+#students: Clark,Horan,Rai,White,Cooper,Jones,Cox,Smith (4 marks)
+
+#tudents = ["Clark", "Horan", "Rai", "White", "Cooper", "Jones", "Cox", "Smith"]
+
+#b) use a method to order the students so that they are in alphabetical order (3 marks)
+
+#students.sort()
+#print (students)
+
+#17) create a tuple that represents exam marks with the following data. (4 marks)
+#These are the respective exam marks for the alphabetically ordered student list
+# 65,66,67,80,90,65,65,93
+
+#marks = (65,66,67,80,90,65,65,93)
+
+#18) Dictionary question (9 marks)
+#create a dictionary which joins the student with their corresponding mark. 
+#There is a manual way of doing this or a way involving using the previous tuple and list
+#you will be awarded highest marks for 
+
+#student_marks = (dict(zip(students,marks)))
+
+#print (student_marks)
+
+#Sir Isaac Newton created the three laws of motion. The second of these laws 
+#links force with mass and acceleration. The formula is as follows:
+#Force = Mass x Acceleration. Force is measured in Newtons
+#Write a function called calcForc which takes two arguments (Mass and Acceleration) and returns
+# the product of these two arguments
+#Therefore a call of calcForce(500,2) should returnn 1000
+#Give the default acceleration as 9.81 (Gravity). a call of calcForce(100) should return 981
+
+#def calforc (mass, acel = 9.81):
+    #force = mass * acel
+    #return force
+
+#print (calforc (500,2))
+
+
+
+##===================##
+
+#def gallonsToL (gallon):
+    #lires = gallon * 3.785411784
+    #return lires
+
+#print (gallonsToL (5))
+
+
+##===================##
+
+#4.5.1 Sample functions: Evaluating the BMI
+#Let's get started on a function to evaluate the Body Mass Index (BMI).
+
+#As you can see, the formula gets two values:
+
+#weight (originally in kilograms)
+#height (originally in meters)
+#It seems that this new function will have two parameters. Its name will be bmi, but if you prefer any other name, use it instead.
+
+
+#def bmi (weight, height):
+        #calbmi= weight/height **2
+        #return calbmi
+
+#print (bmi(52.5,1.65))
+
+##===================##
+
+#Question: Write a Python function that takes a list of numbers as input and returns the sum of all even numbers in the list. 
+#For example, if the input list is [1, 2, 3, 4, 5, 6], the function should return 12 (which is the sum of 2, 4, and 6).
+
+#Feel free to write the code to solve this problem.
+
+
+
+#def sum_of_events (numbers):
+    #even_sum = 0
+    #for number in numbers:
+        #if number % 2 ==0:
+            #even_sum += number
+    #return sum_of_events
+
+
+# Example usage:
+#numbers = [1, 2, 3, 4, 5, 6]
+#result = sum_of_events(numbers)
+#print(result)  # Output will be 12
+
+##===================##
+
+#Question: Write a Python function called is_even that takes an integer as an argument and returns True if the number is even and False 
+#if it's odd.
+
+#Here's a template to help you get started:
+
+#def is_even (number):
+    #if number % 2 ==0:
+        #print ("Even number")
+
+    #else:
+        #print ("odd number")
+
+
+#number = (int(input("enter a number? ")))
+#is_even(number)
+
+##===================##
+
+#Question: Write a Python function called count_vowels that takes a string as an argument and returns the count of vowels 
+#(both uppercase and lowercase) in the string. 
+#For this exercise, consider 'a', 'e', 'i', 'o', and 'u' as vowels.
+
+#def count_vowels (word):
+    #counter = 0
+    #for letter in word:
+        #if letter in vowels:
+            #counter += 1
+    #return counter
+
+
+#vowels = ["A","a", "E", "e", "I", "i", "O","o" "U","u"]
+#word = input("Enter a word? ")
+#print (count_vowels(word))
+
+##===================##
+
+#Question: Write a Python program that takes a list of integers as input and returns a new list 
+#containing only the even numbers from the original list. You should use a list comprehension to achieve this.
+
+#For example, if the input list is [1, 2, 3, 4, 5, 6], your program should return [2, 4, 6].
+
+
+#def even_filter (list_of_numbers):
+    #new_list= []
+    #for number in list_of_numbers:
+        #if number %2 ==0:
+            #new_list.append(number)
+    #return new_list
+
+
+
+#numbers =[1, 2, 3, 4, 5, 6]
+#print ("list of even numbers", even_filter(numbers))
+
+##===================##
+
+#Question: Write Python code to calculate the sum of all even numbers from 1 to 100 (inclusive) and then print the result.
+
+#You should use a loop (e.g., for or while) to iterate through the numbers and accumulate the sum. Here's a template to get you started:
+
+#sum = 0
+#for number in range (101):
+    #if number % 2 ==0:
+        #sum += number
+
+#print (sum)
+
+##===================##
+
+#Question: Write a Python expression to calculate the area of a rectangle with a length of 8 units and a width of 5 units.
+
+#What is the area of the rectangle?
+
+#Please calculate and provide the answer.
+
+#def area (height,length):
+    #sq_m= height * length
+    #return sq_m
+
+
+
+#print (area(10,1))
+
+##===================##
+
+#Question: Write a Python program to generate a list of all even numbers from 10 to 30 (inclusive) 
+#using the range function and then calculate the sum of these even numbers.
+
+#Please write the Python code to generate the list and calculate the sum, and provide the answer.
+
+
+
+#even_num = list(range(10,31,2))
+#sum_of_numbers= sum(even_num)
+
+#print(even_num)
+#print(sum_of_numbers)
+
+##===================##
